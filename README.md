@@ -2,6 +2,8 @@
 
 Local-first CLI for ingesting job descriptions, scoring fit against a candidate profile, inspecting application forms in read-only mode, and exporting a lightweight tracker.
 
+> Work in progress: this repository is an active build, not a polished release. The author will continue updating it over time. It is being shared for portfolio and code-review purposes, and it should not be treated as a ready-to-download or production-ready tool.
+
 This public repo is intentionally sanitized. It ships with example profile files only and excludes private resumes, generated application packets, local browser sessions, and other personal job-search artifacts.
 
 ## Public-safe setup
