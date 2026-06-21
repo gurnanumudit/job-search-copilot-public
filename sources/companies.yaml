@@ -1,0 +1,5 @@
+companies:
+  - name: "Replit"
+    priority: "high"
+    visa_likelihood: "medium"
+    greenhouse_board_token: "replit"

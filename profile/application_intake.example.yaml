@@ -1,0 +1,18 @@
+candidate_identity:
+  legal_name: "Example Candidate"
+  email: "candidate@example.com"
+  phone: "+1-555-555-5555"
+  linkedin: "https://www.linkedin.com/in/example-candidate"
+  current_location: "San Francisco, CA"
+
+application_defaults:
+  current_company: "Example Company"
+  start_date_or_availability: "Within 2-4 weeks"
+  relocation_note: "Open to hybrid or remote roles."
+
+voluntary_self_identification:
+  gender: "Prefer not to say"
+  race: "Prefer not to say"
+  veteran_status: "Prefer not to say"
+  disability_status: "Prefer not to say"
+  user_confirmed_for_future_applications: false

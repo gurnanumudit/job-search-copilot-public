@@ -1,0 +1,62 @@
+{
+  "jobs": [
+    {
+      "company": "Stripe",
+      "title": "Staff Data Scientist",
+      "location": "South San Francisco HQ, New York, Seattle, Remote in United States",
+      "remote_policy": "Hybrid/Remote",
+      "employment_type": "Full time",
+      "salary_range": "$205,400 - $308,000",
+      "job_url": "https://stripe.com/jobs/listing/staff-data-scientist/7568328",
+      "apply_url": "https://stripe.com/jobs/listing/staff-data-scientist/7568328",
+      "ats": "manual_verified_web_seed",
+      "description": "Manual web-verified seed from Stripe job page. Growth and Go-to-Market data science role focused on experimentation, forecasting, personalization, algorithmic recommendations, marketing measurement, causal inference, attribution, observability, data foundations, intelligent data products, and senior technical direction for data teams."
+    },
+    {
+      "company": "Stripe",
+      "title": "Data Scientist",
+      "location": "Stripe office locations; location varies by team",
+      "remote_policy": "Hybrid",
+      "employment_type": "Full time",
+      "job_url": "https://stripe.com/jobs/listing/data-scientist/5895430",
+      "apply_url": "https://stripe.com/jobs/listing/data-scientist/5895430",
+      "ats": "manual_verified_web_seed",
+      "description": "Manual web-verified seed from Stripe job page. Broad data science role across Product, Finance, Payments, Security, Risk, Growth, and Go-to-Market teams. Uses machine learning, statistical modeling, causal inference, optimization, experimentation, analytics, product analytics, SQL, Python or R, and AI tools to accelerate model development and analysis."
+    },
+    {
+      "company": "Stripe",
+      "title": "Engineering Manager, Developer Productivity AI",
+      "location": "Seattle, Remote in United States",
+      "remote_policy": "Hybrid/Remote",
+      "employment_type": "Full time",
+      "salary_range": "$214,600 - $321,800",
+      "job_url": "https://stripe.com/jobs/listing/engineering-manager-developer-productivity-ai/7736943",
+      "apply_url": "https://stripe.com/jobs/listing/engineering-manager-developer-productivity-ai/7736943",
+      "ats": "manual_verified_web_seed",
+      "description": "Manual web-verified seed from Stripe job page. Engineering management role for a new Developer Productivity AI team deploying LLM agents and AI developer tools to automate engineering workflows, deliver internal product experiences, partner across Stripe, analyze usage data, and accelerate how engineers work."
+    },
+    {
+      "company": "Stripe",
+      "title": "Product Lead, AI",
+      "location": "New York, Seattle, South San Francisco HQ, Remote in United States",
+      "remote_policy": "Hybrid/Remote",
+      "employment_type": "Full time",
+      "salary_range": "$214,300 - $321,500",
+      "job_url": "https://stripe.com/jobs/listing/product-lead-ai/7655023",
+      "apply_url": "https://stripe.com/jobs/listing/product-lead-ai/7655023",
+      "ats": "manual_verified_web_seed",
+      "description": "Manual web-verified seed from Stripe job page. Product leadership role on Payments Intelligence, working with engineers and data scientists on ML-backed payment intelligence products, infrastructure/platform systems, product strategy, data-driven prioritization, user research, and cross-functional execution."
+    },
+    {
+      "company": "Stripe",
+      "title": "Data Scientist, Economic Insights & Research",
+      "location": "Stripe office locations; location varies by team",
+      "remote_policy": "Hybrid",
+      "employment_type": "Full time",
+      "job_url": "https://stripe.com/jobs/listing/data-scientist-economic-insights-research/7980402",
+      "apply_url": "https://stripe.com/jobs/listing/data-scientist-economic-insights-research/7980402",
+      "ats": "manual_verified_web_seed",
+      "description": "Manual web-verified seed from Stripe job page. Economic insights research role using Stripe internal datasets and public data to conduct rigorous economic research, causal inference, time series analysis, panel data modeling, quasi-experimental designs, Python, SQL, reproducible pipelines, and senior stakeholder communication."
+    }
+  ]
+}

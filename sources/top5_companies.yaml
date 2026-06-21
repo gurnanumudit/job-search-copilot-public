@@ -1,0 +1,75 @@
+companies:
+  - name: "OpenAI"
+    priority: "highest"
+    visa_likelihood: "high"
+    ats: "ashby"
+    ashby_board_slug: "openai"
+    include_keywords:
+      - "data scientist"
+      - "analytics"
+      - "experimentation"
+      - "measurement"
+      - "product data"
+      - "applied ai"
+      - "platform"
+      - "automation"
+      - "risk operations"
+    max_jobs: 80
+
+  - name: "Anthropic"
+    priority: "highest"
+    visa_likelihood: "high"
+    careers_url: "https://www.anthropic.com/careers/jobs"
+    include_keywords:
+      - "data scientist"
+      - "product"
+      - "experimentation"
+      - "measurement"
+      - "analytics"
+      - "applied ai"
+      - "platform"
+      - "developer productivity"
+      - "evals"
+    max_jobs: 80
+
+  - name: "Meta"
+    priority: "highest"
+    visa_likelihood: "high"
+    careers_url: "https://www.metacareers.com/teams/technology/research-and-data"
+    include_keywords:
+      - "data scientist"
+      - "analytics"
+      - "experimentation"
+      - "product analytics"
+      - "measurement"
+      - "machine learning"
+      - "research"
+    max_jobs: 80
+
+  - name: "Stripe"
+    priority: "high"
+    visa_likelihood: "high"
+    careers_url: "https://stripe.com/jobs/search"
+    include_keywords:
+      - "data scientist"
+      - "data science"
+      - "experiments"
+      - "experimentation"
+      - "analytics"
+      - "data platform"
+      - "applied ai"
+    max_jobs: 80
+
+  - name: "Databricks"
+    priority: "high"
+    visa_likelihood: "high"
+    careers_url: "https://www.databricks.com/company/careers/open-positions"
+    include_keywords:
+      - "data scientist"
+      - "product analytics"
+      - "data platform"
+      - "applied ai"
+      - "machine learning"
+      - "analytics"
+      - "experimentation"
+    max_jobs: 80

@@ -1,0 +1,53 @@
+candidate:
+  name: "Example Candidate"
+  email: "candidate@example.com"
+  phone: "+1-555-555-5555"
+  linkedin: ""
+  github: ""
+  portfolio: ""
+  work_authorization: "authorized_us"
+  current_location: "San Francisco, CA"
+  relocation_note: "Open to hybrid or remote roles."
+  start_date_or_availability: "Within 2-4 weeks"
+
+location_preferences:
+  preferred:
+    - "San Francisco, CA"
+    - "Remote"
+  acceptable_hybrid:
+    - "San Francisco, CA"
+    - "Foster City, CA"
+    - "Palo Alto, CA"
+    - "Mountain View, CA"
+  avoid:
+    - "Onsite outside California"
+
+role_lanes:
+  - name: "Main"
+    resume_file: "profile/main_resume.md"
+  - name: "Experimentation"
+    resume_file: "profile/experimentation_resume.md"
+  - name: "AI Tooling"
+    resume_file: "profile/ai_tooling_resume.md"
+
+job_priorities:
+  must_have:
+    - "senior scope"
+    - "high ownership"
+    - "product or platform impact"
+  strong_positive:
+    - "experimentation"
+    - "causal inference"
+    - "AI tooling"
+    - "internal tools"
+    - "developer productivity"
+    - "self-serve analytics"
+    - "product measurement"
+    - "growth analytics"
+    - "data platform"
+  negative:
+    - "junior"
+    - "intern"
+    - "pure dashboarding"
+    - "sales analytics only"
+    - "manual reporting only"
