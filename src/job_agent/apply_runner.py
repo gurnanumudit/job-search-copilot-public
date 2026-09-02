@@ -742,7 +742,23 @@ async def _audit_unfilled_fields(page) -> list[dict[str, Any]]:
             return rect.width > 0 && rect.height > 0 && style.visibility !== 'hidden' && style.display !== 'none';
           };
           const labelFor = (element) => {
-            const explicit = element.id ? document.querySelector(`label[for="${element.id}"]`) : null;
+            const labelledTextFor = (target) => {
+              const labelledBy = target?.getAttribute('aria-labelledby');
+              return labelledBy
+                ? norm(labelledBy.split(/\\s+/).map((id) => {
+                    const label = document.getElementById(id);
+                    return label?.innerText || label?.textContent || '';
+                  }).join(' '))
+                : '';
+            };
+            const directLabel = labelledTextFor(element);
+            if (directLabel) return directLabel;
+            const relatedCustomControl = element
+              .closest('.select, [role="group"]')
+              ?.querySelector('[role="combobox"][aria-labelledby], [aria-haspopup="listbox"][aria-labelledby]');
+            const relatedLabel = labelledTextFor(relatedCustomControl);
+            if (relatedLabel) return relatedLabel;
+            const explicit = element.id ? document.querySelector(`label[for="${CSS.escape(element.id)}"]`) : null;
             if (explicit) return norm(explicit.innerText || explicit.textContent);
             const aria = element.getAttribute('aria-label');
             if (aria) return norm(aria);
