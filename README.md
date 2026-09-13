@@ -7,6 +7,10 @@ and uses Playwright to assist with form filling while keeping the final decision
 This repository is a sanitized portfolio build. Every committed profile and job is synthetic;
 resumes, browser sessions, generated packets, and personal application data remain local.
 
+The three committed resume examples in `profile/` are tracked files. Git ignore rules do not
+protect edits to tracked files: do not commit personal replacements or application answers. Keep
+personal work in a private copy and review `git diff` and staged files before sharing changes.
+
 ## How it works
 
 | Stage | What the copilot does | Human control |
@@ -38,13 +42,14 @@ Requires Python 3.11 or newer.
 python3.11 -m venv .venv
 source .venv/bin/activate
 pip install -e '.[dev]'
-playwright install chromium
 
 python -m job_agent init
 python -m job_agent ingest --file jobs/raw/example_job.md
-python -m job_agent score --job-id example-company-senior-data-scientist
-python -m job_agent package --job-id example-company-senior-data-scientist
+python -m job_agent score --job-id exampleco-senior-data-scientist
 ```
+
+The ingested ID is derived from the committed example's company (`ExampleCo`) and title. Use the
+ID printed by `ingest` when trying a different listing.
 
 To exercise public-source discovery:
 
@@ -54,13 +59,25 @@ python -m job_agent discover --companies sources/companies.yaml --mode two-phase
 python -m job_agent shortlist --limit 10 --min-score 50
 ```
 
-To inspect and fill the synthetic example application without submitting it:
+The committed synthetic listing uses an `example.com` placeholder, not a working application form.
+Use the local HTML fixtures in `tests/` to test browser behavior; do not expect the sample URL to
+open an ATS.
+
+For a real listing that you have deliberately ingested and reviewed, install Playwright's Chromium
+binary, replace `YOUR_JOB_ID` with the ID printed by ingest, and inspect without submitting:
 
 ```bash
-python -m job_agent inspect --job-id example-company-senior-data-scientist
-python -m job_agent apply --job-id example-company-senior-data-scientist --headed
+playwright install chromium
+python -m job_agent inspect --job-id YOUR_JOB_ID
+python -m job_agent package --job-id YOUR_JOB_ID
+python -m job_agent apply --job-id YOUR_JOB_ID --headed
 python -m job_agent apply-qa
 ```
+
+`playwright install chromium` downloads a browser binary. The commands after it can contact the
+listing's website. In particular, `package` automatically inspects an apply URL when no saved
+inspection exists. The synthetic ingest-and-score walkthrough above is local; neither workflow
+enables `--submit`.
 
 ## Repository map
 
